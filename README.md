@@ -32,21 +32,30 @@ Heart disease is one of the leading causes of death worldwide. Early prediction 
 ## 📈 Output
 Model performance evaluated using confusion matrix, accuracy, and classification report.
 
-## 📁 Dataset Usage in Colab
+## 📦 Dataset ZIP File
 
-You can load the Excel file in Google Colab using `pandas.read_excel()` as shown below:
+The dataset used in this project is included as a ZIP file in this repository:
+
+👉 [`PRCP-1016-HeartDiseasePred.zip`](https://github.com/Ravali-star804/Heart-Disease-project1/blob/main/PRCP-1016-HeartDiseasePred.zip)
+
+It contains Excel files with patient health information used to train and test the machine learning models.
+
+### 📥 How to Use:
+1. Click the link above and click **"Download"** (use "Raw" to download).
+2. Extract the ZIP file on your local system.
+3. Upload the required `.xlsx` file into **Google Colab** using the left sidebar.
+4. Use the following code in Colab to read it:
 
 ```python
 import pandas as pd
 
-# If using from ZIP and extracted manually
-df = pd.read_excel("/content/Heart_disease_excel/heart.xlsx")  # adjust the path and filename as needed
+# After uploading the file manually in Colab
+df = pd.read_excel("heart.xlsx")  # change name if different
+df.head()
 
-# If uploaded directly into Colab or the repo
-df = pd.read_excel("heart.xlsx")
 
 ## 👩‍💻 Author
 **Ravali Ambadi**  
 Aspiring Data Scientist  
-[LinkedIn](https://www.linkedin.com/in/ravali-ambadi-872772187)
+[LinkedIn](www.linkedin.com/in/ravali-ambadi-872772187)
 
