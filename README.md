@@ -32,6 +32,19 @@ Heart disease is one of the leading causes of death worldwide. Early prediction 
 ## 📈 Output
 Model performance evaluated using confusion matrix, accuracy, and classification report.
 
+## 📁 Dataset Usage in Colab
+
+You can load the Excel file in Google Colab using `pandas.read_excel()` as shown below:
+
+```python
+import pandas as pd
+
+# If using from ZIP and extracted manually
+df = pd.read_excel("/content/Heart_disease_excel/heart.xlsx")  # adjust the path and filename as needed
+
+# If uploaded directly into Colab or the repo
+df = pd.read_excel("heart.xlsx")
+
 ## 👩‍💻 Author
 **Ravali Ambadi**  
 Aspiring Data Scientist  
